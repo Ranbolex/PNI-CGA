@@ -1,0 +1,20 @@
+{
+  "planner": {
+    "depth": 4,
+    "rounds": 16,
+    "max_nodes": 20000,
+    "beam": 32,
+    "seconds": 60.0
+  },
+  "budget": {
+    "views": 4,
+    "output_tokens": 65536,
+    "calls": 32,
+    "seconds": 600.0
+  },
+  "verifier": {
+    "legibility": 2,
+    "binding": 2
+  },
+  "seeds": [11, 29, 47]
+}

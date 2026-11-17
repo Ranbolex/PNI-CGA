@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {"id": "dark", "answer": "dark", "facts": {"tile_white": "no"}},
+    {"id": "light", "answer": "light", "facts": {"tile_white": "yes"}}
+  ],
+  "actions": [
+    {
+      "id": "read_tile",
+      "primitive": "The square tile filling this crop is white rather than black.",
+      "anchor_ids": ["tile"],
+      "box": [0, 0, 64, 64],
+      "requires_scope": false,
+      "predicted_cost": 1.0,
+      "cost": {"views": 1, "output_tokens": 1024, "calls": 1, "seconds": 90.0}
+    }
+  ],
+  "channels": {
+    "read_tile": {
+      "dark": {"YES": 0.0, "NO": 0.95, "UNKNOWN": 0.05},
+      "light": {"YES": 0.95, "NO": 0.0, "UNKNOWN": 0.05}
+    }
+  },
+  "compatibility": {
+    "read_tile": {"YES": ["light"], "NO": ["dark"], "UNKNOWN": ["dark", "light"]}
+  }
+}

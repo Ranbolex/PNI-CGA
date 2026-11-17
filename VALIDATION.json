@@ -1,0 +1,36 @@
+{
+  "package": "PNI-CGA",
+  "version": "0.1.0",
+  "environment": {
+    "python": "3.13.9",
+    "numpy": "2.4.6",
+    "scipy": "1.16.3",
+    "Pillow": "12.0.0",
+    "pytest": "9.1.1"
+  },
+  "checks": {
+    "source_archive_integrity": true,
+    "anonymous_content_scan": true,
+    "wheel_build": true,
+    "sdist_build": true,
+    "wheel_installed_outside_source_tree": true,
+    "wheel_prompt_and_certificate_resources": true,
+    "installed_package_tests_passed": 53,
+    "documented_offline_commands": true,
+    "actual_png_worlds_checked": 6,
+    "independent_rational_certificate": {
+      "all_passed": true,
+      "all_trees_checked": 101,
+      "closure_optimum": "1/2",
+      "edge_optimum": "2/27",
+      "best_closure_on_edge_optimal_face": "1/3",
+      "closure_mean": "7/12",
+      "edge_mean": "11/18"
+    }
+  },
+  "installation": {
+    "isolated_interpreter": true,
+    "existing_dependency_packages_reused": true
+  },
+  "scope": "Core finite joint-state algorithm, analytic checks and visual acquisition interfaces; no benchmark results generated."
+}

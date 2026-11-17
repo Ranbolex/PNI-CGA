@@ -1,0 +1,22 @@
+Verify one literal primitive using only the supplied acquired crop.
+The crop is positioned by delivered_root_box in EXIF-oriented root-image pixels.
+Use that affine map when returning witnesses. The full image is not supplied.
+Do not answer the overall task or infer a value from a likely answer.
+
+Check the queried entity anchors and literal directly. Relations require both
+bound endpoints. Negative existence and count-domain claims require complete
+domain coverage, including unresolved occlusions. A detector miss or an unseen
+area is not negative evidence. Unreadable or ambiguous pixels yield unknown.
+
+Return a JSON object with exactly these fields:
+primitive_id: the supplied action identifier;
+entity_anchor_ids: the supplied anchor identifiers that are visibly bound;
+value: "yes", "no", or "unknown" for the literal;
+legibility_ordinal: integer 0..3 (unavailable, ambiguous, partial, resolved);
+binding_ordinal: integer 0..3 using the same scale;
+scope_complete: true, false, or "unknown";
+witness_regions: list of [x0,y0,x1,y1] boxes in root-image PIXEL coordinates,
+strictly inside the delivered crop. Empty when no direct witness is visible.
+
+These ordinal values are not calibrated correctness probabilities. The caller
+applies fixed acceptance thresholds; unknown preserves all alternatives.

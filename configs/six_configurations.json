@@ -1,0 +1,378 @@
+{
+  "configurations": [
+    {
+      "id": "h0",
+      "answer": "1",
+      "facts": {
+        "region0": "0",
+        "region1": "0",
+        "region2": "1",
+        "region3": "1"
+      },
+      "mass": 1.0,
+      "anonymous": false
+    },
+    {
+      "id": "h1",
+      "answer": "1",
+      "facts": {
+        "region0": "0",
+        "region1": "1",
+        "region2": "0",
+        "region3": "1"
+      },
+      "mass": 1.0,
+      "anonymous": false
+    },
+    {
+      "id": "h2",
+      "answer": "0",
+      "facts": {
+        "region0": "1",
+        "region1": "0",
+        "region2": "1",
+        "region3": "1"
+      },
+      "mass": 1.0,
+      "anonymous": false
+    },
+    {
+      "id": "h3",
+      "answer": "0",
+      "facts": {
+        "region0": "1",
+        "region1": "1",
+        "region2": "0",
+        "region3": "0"
+      },
+      "mass": 1.0,
+      "anonymous": false
+    },
+    {
+      "id": "h4",
+      "answer": "0",
+      "facts": {
+        "region0": "1",
+        "region1": "1",
+        "region2": "0",
+        "region3": "1"
+      },
+      "mass": 1.0,
+      "anonymous": false
+    },
+    {
+      "id": "h5",
+      "answer": "1",
+      "facts": {
+        "region0": "1",
+        "region1": "1",
+        "region2": "1",
+        "region3": "1"
+      },
+      "mass": 1.0,
+      "anonymous": false
+    }
+  ],
+  "actions": [
+    {
+      "id": "a0",
+      "cost": {
+        "views": 1,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "calls": 0,
+        "seconds": 0.0
+      },
+      "predicted_cost": 1.0,
+      "primitive": "region0",
+      "anchor_ids": [
+        "tile0"
+      ],
+      "box": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "requires_scope": false
+    },
+    {
+      "id": "a1",
+      "cost": {
+        "views": 1,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "calls": 0,
+        "seconds": 0.0
+      },
+      "predicted_cost": 1.0,
+      "primitive": "region1",
+      "anchor_ids": [
+        "tile1"
+      ],
+      "box": [
+        64,
+        0,
+        128,
+        64
+      ],
+      "requires_scope": false
+    },
+    {
+      "id": "a2",
+      "cost": {
+        "views": 1,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "calls": 0,
+        "seconds": 0.0
+      },
+      "predicted_cost": 1.0,
+      "primitive": "region2",
+      "anchor_ids": [
+        "tile2"
+      ],
+      "box": [
+        128,
+        0,
+        192,
+        64
+      ],
+      "requires_scope": false
+    },
+    {
+      "id": "a3",
+      "cost": {
+        "views": 1,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "calls": 0,
+        "seconds": 0.0
+      },
+      "predicted_cost": 1.0,
+      "primitive": "region3",
+      "anchor_ids": [
+        "tile3"
+      ],
+      "box": [
+        192,
+        0,
+        256,
+        64
+      ],
+      "requires_scope": false
+    }
+  ],
+  "channels": {
+    "a0": {
+      "h0": {
+        "0": 1.0,
+        "1": 0.0,
+        "UNKNOWN": 0.0
+      },
+      "h1": {
+        "0": 1.0,
+        "1": 0.0,
+        "UNKNOWN": 0.0
+      },
+      "h2": {
+        "0": 0.0,
+        "1": 1.0,
+        "UNKNOWN": 0.0
+      },
+      "h3": {
+        "0": 0.0,
+        "1": 1.0,
+        "UNKNOWN": 0.0
+      },
+      "h4": {
+        "0": 0.0,
+        "1": 1.0,
+        "UNKNOWN": 0.0
+      },
+      "h5": {
+        "0": 0.0,
+        "1": 1.0,
+        "UNKNOWN": 0.0
+      }
+    },
+    "a1": {
+      "h0": {
+        "0": 1.0,
+        "1": 0.0,
+        "UNKNOWN": 0.0
+      },
+      "h1": {
+        "0": 0.0,
+        "1": 1.0,
+        "UNKNOWN": 0.0
+      },
+      "h2": {
+        "0": 1.0,
+        "1": 0.0,
+        "UNKNOWN": 0.0
+      },
+      "h3": {
+        "0": 0.0,
+        "1": 1.0,
+        "UNKNOWN": 0.0
+      },
+      "h4": {
+        "0": 0.0,
+        "1": 1.0,
+        "UNKNOWN": 0.0
+      },
+      "h5": {
+        "0": 0.0,
+        "1": 1.0,
+        "UNKNOWN": 0.0
+      }
+    },
+    "a2": {
+      "h0": {
+        "0": 0.0,
+        "1": 1.0,
+        "UNKNOWN": 0.0
+      },
+      "h1": {
+        "0": 1.0,
+        "1": 0.0,
+        "UNKNOWN": 0.0
+      },
+      "h2": {
+        "0": 0.0,
+        "1": 1.0,
+        "UNKNOWN": 0.0
+      },
+      "h3": {
+        "0": 1.0,
+        "1": 0.0,
+        "UNKNOWN": 0.0
+      },
+      "h4": {
+        "0": 1.0,
+        "1": 0.0,
+        "UNKNOWN": 0.0
+      },
+      "h5": {
+        "0": 0.0,
+        "1": 1.0,
+        "UNKNOWN": 0.0
+      }
+    },
+    "a3": {
+      "h0": {
+        "0": 0.0,
+        "1": 1.0,
+        "UNKNOWN": 0.0
+      },
+      "h1": {
+        "0": 0.0,
+        "1": 1.0,
+        "UNKNOWN": 0.0
+      },
+      "h2": {
+        "0": 0.0,
+        "1": 1.0,
+        "UNKNOWN": 0.0
+      },
+      "h3": {
+        "0": 1.0,
+        "1": 0.0,
+        "UNKNOWN": 0.0
+      },
+      "h4": {
+        "0": 0.0,
+        "1": 1.0,
+        "UNKNOWN": 0.0
+      },
+      "h5": {
+        "0": 0.0,
+        "1": 1.0,
+        "UNKNOWN": 0.0
+      }
+    }
+  },
+  "compatibility": {
+    "a0": {
+      "0": [
+        "h0",
+        "h1"
+      ],
+      "1": [
+        "h2",
+        "h3",
+        "h4",
+        "h5"
+      ],
+      "UNKNOWN": [
+        "h0",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5"
+      ]
+    },
+    "a1": {
+      "0": [
+        "h0",
+        "h2"
+      ],
+      "1": [
+        "h1",
+        "h3",
+        "h4",
+        "h5"
+      ],
+      "UNKNOWN": [
+        "h0",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5"
+      ]
+    },
+    "a2": {
+      "0": [
+        "h1",
+        "h3",
+        "h4"
+      ],
+      "1": [
+        "h0",
+        "h2",
+        "h5"
+      ],
+      "UNKNOWN": [
+        "h0",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5"
+      ]
+    },
+    "a3": {
+      "0": [
+        "h3"
+      ],
+      "1": [
+        "h0",
+        "h1",
+        "h2",
+        "h4",
+        "h5"
+      ],
+      "UNKNOWN": [
+        "h0",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5"
+      ]
+    }
+  }
+}
